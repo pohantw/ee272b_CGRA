@@ -84,7 +84,7 @@ def construct():
 
   # Custom steps
 
-  rtl                  = Step( this_dir + '/../common/rtl'                         )
+  rtl                  = Step( this_dir + '/rtl'                                   )
   constraints          = Step( this_dir + '/constraints'                           )
   custom_init          = Step( this_dir + '/custom-init'                           )
   custom_genus_scripts = Step( this_dir + '/custom-genus-scripts'                  )

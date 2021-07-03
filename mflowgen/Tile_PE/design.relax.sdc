@@ -1,6 +1,6 @@
 # ####################################################################
 
-#  Created by Genus(TM) Synthesis Solution 20.11-s111_1 on Fri Jun 25 17:29:40 PDT 2021
+#  Created by Genus(TM) Synthesis Solution 20.11-s111_1 on Sun Jun 27 15:04:17 PDT 2021
 
 # ####################################################################
 
@@ -1033,75 +1033,10 @@ set_multicycle_path -to [list \
 set_min_delay 5.6 -from [get_ports clk_pass_through] -to [list \
   [get_ports clk_out]  \
   [get_ports clk_pass_through_out_bot] ]
-set_max_delay 5.855 -from [get_ports clk_pass_through] -to [list \
+set_max_delay 5.85 -from [get_ports clk_pass_through] -to [list \
   [get_ports clk_out]  \
   [get_ports clk_pass_through_out_bot] ]
-# set_min_delay 5.8 -from [list \
-#   [get_ports {read_config_data_in[31]}]  \
-#   [get_ports {read_config_data_in[30]}]  \
-#   [get_ports {read_config_data_in[29]}]  \
-#   [get_ports {read_config_data_in[28]}]  \
-#   [get_ports {read_config_data_in[27]}]  \
-#   [get_ports {read_config_data_in[26]}]  \
-#   [get_ports {read_config_data_in[25]}]  \
-#   [get_ports {read_config_data_in[24]}]  \
-#   [get_ports {read_config_data_in[23]}]  \
-#   [get_ports {read_config_data_in[22]}]  \
-#   [get_ports {read_config_data_in[21]}]  \
-#   [get_ports {read_config_data_in[20]}]  \
-#   [get_ports {read_config_data_in[19]}]  \
-#   [get_ports {read_config_data_in[18]}]  \
-#   [get_ports {read_config_data_in[17]}]  \
-#   [get_ports {read_config_data_in[16]}]  \
-#   [get_ports {read_config_data_in[15]}]  \
-#   [get_ports {read_config_data_in[14]}]  \
-#   [get_ports {read_config_data_in[13]}]  \
-#   [get_ports {read_config_data_in[12]}]  \
-#   [get_ports {read_config_data_in[11]}]  \
-#   [get_ports {read_config_data_in[10]}]  \
-#   [get_ports {read_config_data_in[9]}]  \
-#   [get_ports {read_config_data_in[8]}]  \
-#   [get_ports {read_config_data_in[7]}]  \
-#   [get_ports {read_config_data_in[6]}]  \
-#   [get_ports {read_config_data_in[5]}]  \
-#   [get_ports {read_config_data_in[4]}]  \
-#   [get_ports {read_config_data_in[3]}]  \
-#   [get_ports {read_config_data_in[2]}]  \
-#   [get_ports {read_config_data_in[1]}]  \
-#   [get_ports {read_config_data_in[0]}] ] -to [list \
-#   [get_ports {read_config_data[31]}]  \
-#   [get_ports {read_config_data[30]}]  \
-#   [get_ports {read_config_data[29]}]  \
-#   [get_ports {read_config_data[28]}]  \
-#   [get_ports {read_config_data[27]}]  \
-#   [get_ports {read_config_data[26]}]  \
-#   [get_ports {read_config_data[25]}]  \
-#   [get_ports {read_config_data[24]}]  \
-#   [get_ports {read_config_data[23]}]  \
-#   [get_ports {read_config_data[22]}]  \
-#   [get_ports {read_config_data[21]}]  \
-#   [get_ports {read_config_data[20]}]  \
-#   [get_ports {read_config_data[19]}]  \
-#   [get_ports {read_config_data[18]}]  \
-#   [get_ports {read_config_data[17]}]  \
-#   [get_ports {read_config_data[16]}]  \
-#   [get_ports {read_config_data[15]}]  \
-#   [get_ports {read_config_data[14]}]  \
-#   [get_ports {read_config_data[13]}]  \
-#   [get_ports {read_config_data[12]}]  \
-#   [get_ports {read_config_data[11]}]  \
-#   [get_ports {read_config_data[10]}]  \
-#   [get_ports {read_config_data[9]}]  \
-#   [get_ports {read_config_data[8]}]  \
-#   [get_ports {read_config_data[7]}]  \
-#   [get_ports {read_config_data[6]}]  \
-#   [get_ports {read_config_data[5]}]  \
-#   [get_ports {read_config_data[4]}]  \
-#   [get_ports {read_config_data[3]}]  \
-#   [get_ports {read_config_data[2]}]  \
-#   [get_ports {read_config_data[1]}]  \
-#   [get_ports {read_config_data[0]}] ]
-set_min_delay 5.855 -to [list \
+set_min_delay 5.85 -to [list \
   [get_ports {config_out_config_addr[0]}]  \
   [get_ports {config_out_config_addr[1]}]  \
   [get_ports {config_out_config_addr[2]}]  \
@@ -1170,7 +1105,72 @@ set_min_delay 5.855 -to [list \
   [get_ports {config_out_write[0]}]  \
   [get_ports {stall_out[0]}]  \
   [get_ports reset_out] ]
-set_max_delay 6.4 -to [list \
+#set_min_delay 5.7 -from [list \
+#  [get_ports {read_config_data_in[31]}]  \
+#  [get_ports {read_config_data_in[30]}]  \
+#  [get_ports {read_config_data_in[29]}]  \
+#  [get_ports {read_config_data_in[28]}]  \
+#  [get_ports {read_config_data_in[27]}]  \
+#  [get_ports {read_config_data_in[26]}]  \
+#  [get_ports {read_config_data_in[25]}]  \
+#  [get_ports {read_config_data_in[24]}]  \
+#  [get_ports {read_config_data_in[23]}]  \
+#  [get_ports {read_config_data_in[22]}]  \
+#  [get_ports {read_config_data_in[21]}]  \
+#  [get_ports {read_config_data_in[20]}]  \
+#  [get_ports {read_config_data_in[19]}]  \
+#  [get_ports {read_config_data_in[18]}]  \
+#  [get_ports {read_config_data_in[17]}]  \
+#  [get_ports {read_config_data_in[16]}]  \
+#  [get_ports {read_config_data_in[15]}]  \
+#  [get_ports {read_config_data_in[14]}]  \
+#  [get_ports {read_config_data_in[13]}]  \
+#  [get_ports {read_config_data_in[12]}]  \
+#  [get_ports {read_config_data_in[11]}]  \
+#  [get_ports {read_config_data_in[10]}]  \
+#  [get_ports {read_config_data_in[9]}]  \
+#  [get_ports {read_config_data_in[8]}]  \
+#  [get_ports {read_config_data_in[7]}]  \
+#  [get_ports {read_config_data_in[6]}]  \
+#  [get_ports {read_config_data_in[5]}]  \
+#  [get_ports {read_config_data_in[4]}]  \
+#  [get_ports {read_config_data_in[3]}]  \
+#  [get_ports {read_config_data_in[2]}]  \
+#  [get_ports {read_config_data_in[1]}]  \
+#  [get_ports {read_config_data_in[0]}] ] -to [list \
+#  [get_ports {read_config_data[31]}]  \
+#  [get_ports {read_config_data[30]}]  \
+#  [get_ports {read_config_data[29]}]  \
+#  [get_ports {read_config_data[28]}]  \
+#  [get_ports {read_config_data[27]}]  \
+#  [get_ports {read_config_data[26]}]  \
+#  [get_ports {read_config_data[25]}]  \
+#  [get_ports {read_config_data[24]}]  \
+#  [get_ports {read_config_data[23]}]  \
+#  [get_ports {read_config_data[22]}]  \
+#  [get_ports {read_config_data[21]}]  \
+#  [get_ports {read_config_data[20]}]  \
+#  [get_ports {read_config_data[19]}]  \
+#  [get_ports {read_config_data[18]}]  \
+#  [get_ports {read_config_data[17]}]  \
+#  [get_ports {read_config_data[16]}]  \
+#  [get_ports {read_config_data[15]}]  \
+#  [get_ports {read_config_data[14]}]  \
+#  [get_ports {read_config_data[13]}]  \
+#  [get_ports {read_config_data[12]}]  \
+#  [get_ports {read_config_data[11]}]  \
+#  [get_ports {read_config_data[10]}]  \
+#  [get_ports {read_config_data[9]}]  \
+#  [get_ports {read_config_data[8]}]  \
+#  [get_ports {read_config_data[7]}]  \
+#  [get_ports {read_config_data[6]}]  \
+#  [get_ports {read_config_data[5]}]  \
+#  [get_ports {read_config_data[4]}]  \
+#  [get_ports {read_config_data[3]}]  \
+#  [get_ports {read_config_data[2]}]  \
+#  [get_ports {read_config_data[1]}]  \
+#  [get_ports {read_config_data[0]}] ]
+set_max_delay 6.6 -to [list \
   [get_ports {config_out_config_addr[0]}]  \
   [get_ports {config_out_config_addr[1]}]  \
   [get_ports {config_out_config_addr[2]}]  \
@@ -1304,7 +1304,7 @@ set_max_delay 8.0 -from [list \
   [get_ports {read_config_data[2]}]  \
   [get_ports {read_config_data[1]}]  \
   [get_ports {read_config_data[0]}] ]
-set_max_delay 4.0 -from [list \
+set_max_delay 4.06 -from [list \
   [get_ports {SB_T0_EAST_SB_IN_B1[0]}]  \
   [get_ports {SB_T0_EAST_SB_IN_B16[15]}]  \
   [get_ports {SB_T0_EAST_SB_IN_B16[14]}]  \
