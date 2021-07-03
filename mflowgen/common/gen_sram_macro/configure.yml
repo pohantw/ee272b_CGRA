@@ -1,0 +1,23 @@
+name: gen_sram_macro
+
+commands:
+  - cp ../../../../sky130_sram_macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.sp              outputs/sram.sp
+  - cp ../../../../sky130_sram_macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.lvs.sp          outputs/sram.lvs.sp
+  - cp ../../../../sky130_sram_macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.v               outputs/sram.v
+  - cp ../../../../sky130_sram_macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.lef             outputs/sram.lef
+  - cp ../../../../sky130_sram_macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8_TT_1p8V_25C.lib outputs/sram_tt.lib
+  - cp ../../../../sky130_sram_macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8.gds             outputs/sram.gds
+  - cp ../../../../sky130_sram_macros/sky130_sram_1kbyte_1rw1r_32x256_8/sky130_sram_1kbyte_1rw1r_32x256_8_TT_1p8V_25C.db  outputs/sram_tt.db
+  - sed -i '/SHAPE ABUTMENT/d' outputs/sram.lef
+
+inputs:
+  - adk
+
+outputs:
+  - sram.sp
+  - sram.lvs.sp
+  - sram.v
+  - sram.lef
+  - sram_tt.lib
+  - sram.gds
+  - sram_tt.db

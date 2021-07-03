@@ -1,0 +1,8 @@
+**/build*
+**/__pycache__
+**/xcelium.d
+xrun.*
+
+**/openlane/
+**/sky130_sram_macros/
+
