@@ -1,0 +1,12 @@
+name: rtl
+
+commands:
+  - bash get_rtl.sh
+  - sed -i "/nettype/d" top.sv
+  - cp top.sv ./outputs/design.v
+
+outputs:
+  - design.v
+
+postconditions:
+  - assert File( 'outputs/design.v' )        # must exist
