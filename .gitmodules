@@ -1,0 +1,6 @@
+[submodule "sky130_sram_macros"]
+	path = sky130_sram_macros
+	url = https://github.com/pohantw/sky130_sram_macros
+[submodule "caravel_user_project"]
+	path = caravel_user_project
+	url = https://github.com/pohantw/caravel_user_project
