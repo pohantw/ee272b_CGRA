@@ -25,7 +25,7 @@ set core_margin_l [expr 10 * $horiz_pitch]
 
 # floorplan size
 set fp_width  [expr $horiz_pitch * 1523]
-set fp_height [expr $vert_pitch  * 370 ]
+set fp_height [expr $vert_pitch  * 380 ]
 
 # SRAM size
 selectInst $sram_inst

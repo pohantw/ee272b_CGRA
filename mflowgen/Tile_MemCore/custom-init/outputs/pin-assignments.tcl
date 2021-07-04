@@ -133,12 +133,12 @@ editPin -layer $top_bottom_layer -pin $pins_bottom -start [list $bottom_start 0]
 
 # left
 set left_start $pin_margin
-set left_end   [expr $fp_height - $pin_margin - $tid_range - $sram_total_h -330]
+set left_end   [expr $fp_height - $pin_margin - $tid_range - $sram_total_h -350]
 editPin -layer $left_right_layer -pin $pins_left -start [list 0 $left_start] -end [list 0 $left_end] -side LEFT -spreadType RANGE -spreadDirection clockwise
 
 # right
 set right_start $pin_margin
-set right_end   [expr $fp_height - $pin_margin - $tid_range - $sram_total_h-330]
+set right_end   [expr $fp_height - $pin_margin - $tid_range - $sram_total_h-350]
 editPin -layer $left_right_layer -pin $pins_right -start [list $fp_width $right_start] -end [list $fp_width $right_end] -side RIGHT -spreadType RANGE -spreadDirection counterclockwise
 
 # tile_id / hi / lo

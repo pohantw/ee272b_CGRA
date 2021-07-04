@@ -1,6 +1,6 @@
 # ####################################################################
 
-#  Created by Genus(TM) Synthesis Solution 20.11-s111_1 on Fri Jun 25 17:34:13 PDT 2021
+#  Created by Genus(TM) Synthesis Solution 20.11-s111_1 on Sun Jun 27 20:49:32 PDT 2021
 
 # ####################################################################
 
@@ -1559,7 +1559,7 @@ set_min_delay 6.11 -to [list \
   [get_ports {config_out_read[0]}]  \
   [get_ports {config_out_write[0]}]  \
   [get_ports {stall_out[0]}] ]
-#set_min_delay 5.9 -from [list \
+#set_min_delay 5.7 -from [list \
 #  [get_ports {read_config_data_in[31]}]  \
 #  [get_ports {read_config_data_in[30]}]  \
 #  [get_ports {read_config_data_in[29]}]  \

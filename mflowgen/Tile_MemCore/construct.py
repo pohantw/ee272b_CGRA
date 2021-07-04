@@ -76,7 +76,7 @@ def construct():
   adk = g.get_adk_step()
 
   # Custom steps
-  rtl                  = Step( this_dir + '/../common/rtl'                         )
+  rtl                  = Step( this_dir + '/rtl'                                   )
   genlibdb_constraints = Step( this_dir + '/custom-genlibdb-constraints'           )
   constraints          = Step( this_dir + '/constraints'                           )
   gen_sram             = Step( this_dir + '/../common/gen_sram_macro'              )
@@ -84,11 +84,6 @@ def construct():
   custom_genus_scripts = Step( this_dir + '/custom-genus-scripts'                  )
   custom_lvs           = Step( this_dir + '/custom-lvs-rules'                      )
   custom_power         = Step( this_dir + '/custom-power-leaf'                     )
-  testbench            = Step( this_dir + '/../common/testbench'                   )
-  application          = Step( this_dir + '/../common/application'                 )
-  if synth_power:
-    post_synth_power     = Step( this_dir + '/../common/tile-post-synth-power'     )
-  post_pnr_power       = Step( this_dir + '/../common/tile-post-pnr-power'         )
   # using magic/netgen to do DRC/LVS  
   magic_gds2spice      = Step( this_dir + '/open-magic-gds2spice'                  )
   magic_drc            = Step( this_dir + '/open-magic-drc'                        )
@@ -119,7 +114,6 @@ def construct():
   else:
       drc            = Step( 'cadence-pegasus-drc',            default=True )
       lvs            = Step( 'cadence-pegasus-lvs',            default=True )
-  debugcalibre   = Step( 'cadence-innovus-debug-calibre',  default=True )
 
   #-----------------------------------------------------------------------
   # Graph -- Add nodes
@@ -151,19 +145,11 @@ def construct():
   g.add_step( lvs                  )
   g.add_step( custom_lvs           )
   g.add_step( calibre_lvs          ) # pohan add
-  g.add_step( debugcalibre         )
   # pohan add 
   g.add_step( magic_gds2spice      )
   g.add_step( magic_drc            )
   g.add_step( netgen_lvs           )
   g.add_step( gdsmerge             )
-  
-
-  g.add_step( application          )
-  g.add_step( testbench            )
-  if synth_power:
-    g.add_step( post_synth_power   )
-  g.add_step( post_pnr_power       )
 
   #-----------------------------------------------------------------------
   # Graph -- Add edges
@@ -297,25 +283,6 @@ def construct():
 
   g.connect_by_name( adk,          pt_signoff   )
   g.connect_by_name( signoff,      pt_signoff   )
-
-  g.connect_by_name( application, testbench       )
-  if synth_power:
-      g.connect_by_name( application, post_synth_power )
-      g.connect_by_name( gen_sram,    post_synth_power )
-      g.connect_by_name( synth,       post_synth_power )
-      g.connect_by_name( testbench,   post_synth_power )
-  g.connect_by_name( application, post_pnr_power )
-  g.connect_by_name( gen_sram,    post_pnr_power )
-  g.connect_by_name( signoff,     post_pnr_power )
-  g.connect_by_name( pt_signoff,  post_pnr_power )
-  g.connect_by_name( testbench,   post_pnr_power )
-
-  g.connect_by_name( adk,      debugcalibre )
-  g.connect_by_name( synth,    debugcalibre )
-  g.connect_by_name( iflow,    debugcalibre )
-  g.connect_by_name( signoff,  debugcalibre )
-  g.connect_by_name( drc,      debugcalibre )
-  g.connect_by_name( lvs,      debugcalibre )
 
   #-----------------------------------------------------------------------
   # Parameterize
