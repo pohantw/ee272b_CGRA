@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export root_path="/tmp/pohan/ee272b_CGRA/mflowgen/Tile_PE"
+export root_path="../../../Tile_PE"
 export build_path="$root_path/build_3track_pe_diode"
 
 mkdir -p outputs

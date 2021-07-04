@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export root_path="/tmp/pohan/ee272b_CGRA/mflowgen/Tile_MemCore"
+export root_path="../../../Tile_MemCore"
 export build_path="$root_path/build_3track_mem_diode"
 
 mkdir -p outputs
