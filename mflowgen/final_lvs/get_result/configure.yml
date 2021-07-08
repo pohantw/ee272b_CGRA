@@ -1,0 +1,21 @@
+name: get_result
+
+#-------------------------------------------------------------------------
+# Inputs and Outputs
+#-------------------------------------------------------------------------
+outputs:
+  - design_merged.gds
+  - Tile_PE.lvs.v
+  - Tile_MemCore.lvs.v
+  - user_proj_example.lvs.v
+  - design.lvs.v
+
+#-------------------------------------------------------------------------
+# Parameters
+#-------------------------------------------------------------------------
+
+parameters:
+  design_name: undefined
+
+commands:
+  - bash get_result.sh
