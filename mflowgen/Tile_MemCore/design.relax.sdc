@@ -1,6 +1,6 @@
 # ####################################################################
 
-#  Created by Genus(TM) Synthesis Solution 20.11-s111_1 on Sun Jun 27 20:49:32 PDT 2021
+#  Created by Genus(TM) Synthesis Solution 20.11-s111_1 on Sat Jul 03 01:58:55 PDT 2021
 
 # ####################################################################
 
@@ -1488,10 +1488,10 @@ set_multicycle_path -to [list \
 set_min_delay 5.6 -from [get_ports clk_pass_through] -to [list \
   [get_ports clk_out]  \
   [get_ports clk_pass_through_out_bot] ]
-set_max_delay 6.11 -from [get_ports clk_pass_through] -to [list \
+set_max_delay 6.25 -from [get_ports clk_pass_through] -to [list \
   [get_ports clk_out]  \
   [get_ports clk_pass_through_out_bot] ]
-set_min_delay 6.11 -to [list \
+set_min_delay 6.25 -to [list \
   [get_ports {config_out_config_addr[0]}]  \
   [get_ports {config_out_config_addr[1]}]  \
   [get_ports {config_out_config_addr[2]}]  \
@@ -1624,8 +1624,8 @@ set_min_delay 6.11 -to [list \
 #  [get_ports {read_config_data[2]}]  \
 #  [get_ports {read_config_data[1]}]  \
 #  [get_ports {read_config_data[0]}] ]
-set_min_delay 6.11 -from [get_ports reset] -to [get_ports reset_out]
-set_max_delay 7.2 -to [list \
+set_min_delay 6.25 -from [get_ports reset] -to [get_ports reset_out]
+set_max_delay 7.4 -to [list \
   [get_ports {config_out_config_addr[0]}]  \
   [get_ports {config_out_config_addr[1]}]  \
   [get_ports {config_out_config_addr[2]}]  \
@@ -1693,7 +1693,7 @@ set_max_delay 7.2 -to [list \
   [get_ports {config_out_read[0]}]  \
   [get_ports {config_out_write[0]}]  \
   [get_ports {stall_out[0]}] ]
-set_max_delay 7.2 -from [get_ports reset] -to [get_ports reset_out]
+set_max_delay 7.4 -from [get_ports reset] -to [get_ports reset_out]
 set_max_delay 8.0 -from [list \
   [get_ports {read_config_data_in[31]}]  \
   [get_ports {read_config_data_in[30]}]  \
@@ -1759,7 +1759,7 @@ set_max_delay 8.0 -from [list \
   [get_ports {read_config_data[2]}]  \
   [get_ports {read_config_data[1]}]  \
   [get_ports {read_config_data[0]}] ]
-set_max_delay 4.3 -from [list \
+set_max_delay 4.2 -from [list \
   [get_ports {SB_T0_EAST_SB_IN_B1[0]}]  \
   [get_ports {SB_T0_EAST_SB_IN_B16[15]}]  \
   [get_ports {SB_T0_EAST_SB_IN_B16[14]}]  \

@@ -1,6 +1,6 @@
 # ####################################################################
 
-#  Created by Genus(TM) Synthesis Solution 20.11-s111_1 on Sun Jun 27 15:04:17 PDT 2021
+#  Created by Genus(TM) Synthesis Solution 20.11-s111_1 on Tue Jul 06 02:29:42 PDT 2021
 
 # ####################################################################
 
@@ -1030,82 +1030,13 @@ set_multicycle_path -to [list \
   [get_ports {read_config_data[2]}]  \
   [get_ports {read_config_data[1]}]  \
   [get_ports {read_config_data[0]}] ] -hold -start 2
-set_min_delay 5.6 -from [get_ports clk_pass_through] -to [list \
+set_min_delay 7.8 -from [get_ports clk_pass_through] -to [list \
   [get_ports clk_out]  \
   [get_ports clk_pass_through_out_bot] ]
-set_max_delay 5.85 -from [get_ports clk_pass_through] -to [list \
+set_max_delay 8.055 -from [get_ports clk_pass_through] -to [list \
   [get_ports clk_out]  \
   [get_ports clk_pass_through_out_bot] ]
-set_min_delay 5.85 -to [list \
-  [get_ports {config_out_config_addr[0]}]  \
-  [get_ports {config_out_config_addr[1]}]  \
-  [get_ports {config_out_config_addr[2]}]  \
-  [get_ports {config_out_config_addr[3]}]  \
-  [get_ports {config_out_config_addr[4]}]  \
-  [get_ports {config_out_config_addr[5]}]  \
-  [get_ports {config_out_config_addr[6]}]  \
-  [get_ports {config_out_config_addr[7]}]  \
-  [get_ports {config_out_config_addr[8]}]  \
-  [get_ports {config_out_config_addr[9]}]  \
-  [get_ports {config_out_config_addr[10]}]  \
-  [get_ports {config_out_config_addr[11]}]  \
-  [get_ports {config_out_config_addr[12]}]  \
-  [get_ports {config_out_config_addr[13]}]  \
-  [get_ports {config_out_config_addr[14]}]  \
-  [get_ports {config_out_config_addr[15]}]  \
-  [get_ports {config_out_config_addr[16]}]  \
-  [get_ports {config_out_config_addr[17]}]  \
-  [get_ports {config_out_config_addr[18]}]  \
-  [get_ports {config_out_config_addr[19]}]  \
-  [get_ports {config_out_config_addr[20]}]  \
-  [get_ports {config_out_config_addr[21]}]  \
-  [get_ports {config_out_config_addr[22]}]  \
-  [get_ports {config_out_config_addr[23]}]  \
-  [get_ports {config_out_config_addr[24]}]  \
-  [get_ports {config_out_config_addr[25]}]  \
-  [get_ports {config_out_config_addr[26]}]  \
-  [get_ports {config_out_config_addr[27]}]  \
-  [get_ports {config_out_config_addr[28]}]  \
-  [get_ports {config_out_config_addr[29]}]  \
-  [get_ports {config_out_config_addr[30]}]  \
-  [get_ports {config_out_config_addr[31]}]  \
-  [get_ports {config_out_config_data[0]}]  \
-  [get_ports {config_out_config_data[1]}]  \
-  [get_ports {config_out_config_data[2]}]  \
-  [get_ports {config_out_config_data[3]}]  \
-  [get_ports {config_out_config_data[4]}]  \
-  [get_ports {config_out_config_data[5]}]  \
-  [get_ports {config_out_config_data[6]}]  \
-  [get_ports {config_out_config_data[7]}]  \
-  [get_ports {config_out_config_data[8]}]  \
-  [get_ports {config_out_config_data[9]}]  \
-  [get_ports {config_out_config_data[10]}]  \
-  [get_ports {config_out_config_data[11]}]  \
-  [get_ports {config_out_config_data[12]}]  \
-  [get_ports {config_out_config_data[13]}]  \
-  [get_ports {config_out_config_data[14]}]  \
-  [get_ports {config_out_config_data[15]}]  \
-  [get_ports {config_out_config_data[16]}]  \
-  [get_ports {config_out_config_data[17]}]  \
-  [get_ports {config_out_config_data[18]}]  \
-  [get_ports {config_out_config_data[19]}]  \
-  [get_ports {config_out_config_data[20]}]  \
-  [get_ports {config_out_config_data[21]}]  \
-  [get_ports {config_out_config_data[22]}]  \
-  [get_ports {config_out_config_data[23]}]  \
-  [get_ports {config_out_config_data[24]}]  \
-  [get_ports {config_out_config_data[25]}]  \
-  [get_ports {config_out_config_data[26]}]  \
-  [get_ports {config_out_config_data[27]}]  \
-  [get_ports {config_out_config_data[28]}]  \
-  [get_ports {config_out_config_data[29]}]  \
-  [get_ports {config_out_config_data[30]}]  \
-  [get_ports {config_out_config_data[31]}]  \
-  [get_ports {config_out_read[0]}]  \
-  [get_ports {config_out_write[0]}]  \
-  [get_ports {stall_out[0]}]  \
-  [get_ports reset_out] ]
-#set_min_delay 5.7 -from [list \
+#set_min_delay 8.055 -from [list \
 #  [get_ports {read_config_data_in[31]}]  \
 #  [get_ports {read_config_data_in[30]}]  \
 #  [get_ports {read_config_data_in[29]}]  \
@@ -1170,7 +1101,7 @@ set_min_delay 5.85 -to [list \
 #  [get_ports {read_config_data[2]}]  \
 #  [get_ports {read_config_data[1]}]  \
 #  [get_ports {read_config_data[0]}] ]
-set_max_delay 6.6 -to [list \
+set_min_delay 8.055 -to [list \
   [get_ports {config_out_config_addr[0]}]  \
   [get_ports {config_out_config_addr[1]}]  \
   [get_ports {config_out_config_addr[2]}]  \
@@ -1239,7 +1170,76 @@ set_max_delay 6.6 -to [list \
   [get_ports {config_out_write[0]}]  \
   [get_ports {stall_out[0]}]  \
   [get_ports reset_out] ]
-set_max_delay 8.0 -from [list \
+set_max_delay 8.7 -to [list \
+  [get_ports {config_out_config_addr[0]}]  \
+  [get_ports {config_out_config_addr[1]}]  \
+  [get_ports {config_out_config_addr[2]}]  \
+  [get_ports {config_out_config_addr[3]}]  \
+  [get_ports {config_out_config_addr[4]}]  \
+  [get_ports {config_out_config_addr[5]}]  \
+  [get_ports {config_out_config_addr[6]}]  \
+  [get_ports {config_out_config_addr[7]}]  \
+  [get_ports {config_out_config_addr[8]}]  \
+  [get_ports {config_out_config_addr[9]}]  \
+  [get_ports {config_out_config_addr[10]}]  \
+  [get_ports {config_out_config_addr[11]}]  \
+  [get_ports {config_out_config_addr[12]}]  \
+  [get_ports {config_out_config_addr[13]}]  \
+  [get_ports {config_out_config_addr[14]}]  \
+  [get_ports {config_out_config_addr[15]}]  \
+  [get_ports {config_out_config_addr[16]}]  \
+  [get_ports {config_out_config_addr[17]}]  \
+  [get_ports {config_out_config_addr[18]}]  \
+  [get_ports {config_out_config_addr[19]}]  \
+  [get_ports {config_out_config_addr[20]}]  \
+  [get_ports {config_out_config_addr[21]}]  \
+  [get_ports {config_out_config_addr[22]}]  \
+  [get_ports {config_out_config_addr[23]}]  \
+  [get_ports {config_out_config_addr[24]}]  \
+  [get_ports {config_out_config_addr[25]}]  \
+  [get_ports {config_out_config_addr[26]}]  \
+  [get_ports {config_out_config_addr[27]}]  \
+  [get_ports {config_out_config_addr[28]}]  \
+  [get_ports {config_out_config_addr[29]}]  \
+  [get_ports {config_out_config_addr[30]}]  \
+  [get_ports {config_out_config_addr[31]}]  \
+  [get_ports {config_out_config_data[0]}]  \
+  [get_ports {config_out_config_data[1]}]  \
+  [get_ports {config_out_config_data[2]}]  \
+  [get_ports {config_out_config_data[3]}]  \
+  [get_ports {config_out_config_data[4]}]  \
+  [get_ports {config_out_config_data[5]}]  \
+  [get_ports {config_out_config_data[6]}]  \
+  [get_ports {config_out_config_data[7]}]  \
+  [get_ports {config_out_config_data[8]}]  \
+  [get_ports {config_out_config_data[9]}]  \
+  [get_ports {config_out_config_data[10]}]  \
+  [get_ports {config_out_config_data[11]}]  \
+  [get_ports {config_out_config_data[12]}]  \
+  [get_ports {config_out_config_data[13]}]  \
+  [get_ports {config_out_config_data[14]}]  \
+  [get_ports {config_out_config_data[15]}]  \
+  [get_ports {config_out_config_data[16]}]  \
+  [get_ports {config_out_config_data[17]}]  \
+  [get_ports {config_out_config_data[18]}]  \
+  [get_ports {config_out_config_data[19]}]  \
+  [get_ports {config_out_config_data[20]}]  \
+  [get_ports {config_out_config_data[21]}]  \
+  [get_ports {config_out_config_data[22]}]  \
+  [get_ports {config_out_config_data[23]}]  \
+  [get_ports {config_out_config_data[24]}]  \
+  [get_ports {config_out_config_data[25]}]  \
+  [get_ports {config_out_config_data[26]}]  \
+  [get_ports {config_out_config_data[27]}]  \
+  [get_ports {config_out_config_data[28]}]  \
+  [get_ports {config_out_config_data[29]}]  \
+  [get_ports {config_out_config_data[30]}]  \
+  [get_ports {config_out_config_data[31]}]  \
+  [get_ports {config_out_read[0]}]  \
+  [get_ports {config_out_write[0]}]  \
+  [get_ports {stall_out[0]}]  \
+  [get_ports reset_out] ]
+set_max_delay 11.0 -from [list \
   [get_ports {read_config_data_in[31]}]  \
   [get_ports {read_config_data_in[30]}]  \
   [get_ports {read_config_data_in[29]}]  \
@@ -1304,7 +1304,7 @@ set_max_delay 8.0 -from [list \
   [get_ports {read_config_data[2]}]  \
   [get_ports {read_config_data[1]}]  \
   [get_ports {read_config_data[0]}] ]
-set_max_delay 4.06 -from [list \
+set_max_delay 4.5 -from [list \
   [get_ports {SB_T0_EAST_SB_IN_B1[0]}]  \
   [get_ports {SB_T0_EAST_SB_IN_B16[15]}]  \
   [get_ports {SB_T0_EAST_SB_IN_B16[14]}]  \
@@ -3419,107 +3419,107 @@ set_input_delay -clock [get_clocks ideal_clock] -add_delay 2.04 [get_ports {tile
 set_input_delay -clock [get_clocks ideal_clock] -add_delay 2.04 [get_ports {tile_id[2]}]
 set_input_delay -clock [get_clocks ideal_clock] -add_delay 2.04 [get_ports {tile_id[1]}]
 set_input_delay -clock [get_clocks ideal_clock] -add_delay 2.04 [get_ports {tile_id[0]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports clk_pass_through]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {stall[0]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[31]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[30]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[29]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[28]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[27]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[26]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[25]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[24]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[23]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[22]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[21]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[20]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[19]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[18]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[17]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[16]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[15]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[14]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[13]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[12]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[11]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[10]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[9]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[8]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[7]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[6]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[5]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[4]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[3]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[2]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[1]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_data[0]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[31]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[30]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[29]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[28]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[27]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[26]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[25]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[24]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[23]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[22]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[21]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[20]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[19]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[18]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[17]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[16]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[15]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[14]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[13]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[12]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[11]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[10]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[9]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[8]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[7]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[6]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[5]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[4]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[3]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[2]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[1]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_config_addr[0]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_read[0]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {config_write[0]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[31]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[30]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[29]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[28]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[27]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[26]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[25]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[24]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[23]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[22]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[21]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[20]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[19]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[18]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[17]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[16]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[15]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[14]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[13]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[12]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[11]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[10]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[9]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[8]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[7]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[6]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[5]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[4]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[3]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[2]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[1]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports {read_config_data_in[0]}]
-set_input_delay -clock [get_clocks ideal_clock] -add_delay 5.6 [get_ports reset]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports clk_pass_through]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {stall[0]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[31]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[30]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[29]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[28]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[27]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[26]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[25]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[24]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[23]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[22]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[21]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[20]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[19]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[18]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[17]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[16]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[15]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[14]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[13]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[12]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[11]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[10]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[9]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[8]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[7]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[6]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[5]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[4]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[3]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[2]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[1]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_data[0]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[31]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[30]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[29]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[28]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[27]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[26]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[25]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[24]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[23]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[22]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[21]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[20]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[19]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[18]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[17]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[16]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[15]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[14]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[13]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[12]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[11]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[10]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[9]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[8]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[7]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[6]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[5]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[4]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[3]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[2]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[1]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_config_addr[0]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_read[0]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {config_write[0]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[31]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[30]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[29]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[28]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[27]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[26]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[25]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[24]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[23]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[22]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[21]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[20]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[19]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[18]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[17]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[16]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[15]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[14]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[13]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[12]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[11]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[10]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[9]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[8]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[7]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[6]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[5]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[4]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[3]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[2]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[1]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports {read_config_data_in[0]}]
+set_input_delay -clock [get_clocks ideal_clock] -add_delay 7.8 [get_ports reset]
 set_output_delay -clock [get_clocks ideal_clock] -add_delay 0.0 [get_ports {SB_T0_EAST_SB_OUT_B1[0]}]
 set_output_delay -clock [get_clocks ideal_clock] -add_delay 0.0 [get_ports {SB_T0_EAST_SB_OUT_B16[15]}]
 set_output_delay -clock [get_clocks ideal_clock] -add_delay 0.0 [get_ports {SB_T0_EAST_SB_OUT_B16[14]}]
