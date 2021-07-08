@@ -64,7 +64,7 @@ set_input_delay -clock ${clock_name} ${i_delay} [all_inputs -no_clocks]
 # Pass through should have no input delay
 # Fix config input delay to specific value
 # [pohan note] why 0.7ns? if we are synthesizing at 12ns, will it still be 0.7ns?
-set pt_i_delay 5.6
+set pt_i_delay 7.8
 set_input_delay -clock ${clock_name} ${pt_i_delay} clk_pass_through
 set_input_delay -clock ${clock_name} ${pt_i_delay} stall
 set_input_delay -clock ${clock_name} ${pt_i_delay} config_config_data*
