@@ -21,7 +21,7 @@ set core_margin_r [expr 10 * $horiz_pitch]
 set core_margin_l [expr 10 * $horiz_pitch]
 
 # floorplan size
-set fp_width  [expr $horiz_pitch * 1523]
+set fp_width  [expr $horiz_pitch * 1511]
 set fp_height [expr $vert_pitch * 70]
 
 #-------------------------------------------------------------------------
