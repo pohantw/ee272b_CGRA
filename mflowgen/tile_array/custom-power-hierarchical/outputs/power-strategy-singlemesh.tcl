@@ -65,7 +65,7 @@ set ofst_l [expr $macro_ring_spacing]
 set ofst_r [expr $macro_ring_spacing]
 
 if {$run_core_ring} {
-    addRing -nets {VDD VSS} -type core_rings -follow io     \
+    addRing -nets {VSS VDD} -type core_rings -follow io     \
             -layer [list top  $pmesh_top bottom $pmesh_top  \
                          left $pmesh_bot right  $pmesh_bot] \
             -width $macro_ring_width                        \
@@ -417,7 +417,7 @@ set pmesh_bot_str_width [expr  8 *  3 * $M1_min_width   ]
 set pmesh_bot_str_pitch [expr 4 * 10 * $M1_route_pitchX]
 
 set pmesh_bot_str_intraset_spacing [expr $pmesh_bot_str_pitch - $pmesh_bot_str_width]
-set pmesh_bot_str_interset_pitch   [expr 2*$pmesh_bot_str_pitch]
+set pmesh_bot_str_interset_pitch   [expr 4*$pmesh_bot_str_pitch]
 
 setViaGenMode -reset
 setViaGenMode -viarule_preference default
@@ -563,7 +563,7 @@ set pmesh_top_str_width [expr  8 *  3 * $M1_min_width   ]
 set pmesh_top_str_pitch [expr 4 * 10 * $M1_route_pitchX]
 
 set pmesh_top_str_intraset_spacing [expr $pmesh_top_str_pitch - $pmesh_top_str_width]
-set pmesh_top_str_interset_pitch   [expr 2*$pmesh_top_str_pitch]
+set pmesh_top_str_interset_pitch   [expr 4*$pmesh_top_str_pitch]
 
 setViaGenMode -reset
 setViaGenMode -viarule_preference default
