@@ -96,6 +96,10 @@ def construct():
   gdsmerge       = Step( 'mentor-calibre-gdsmerge',        default=True )
   pt_signoff     = Step( 'synopsys-pt-timing-signoff',     default=True )
 
+  # add db files for signoff
+  pt_signoff.extend_inputs(['Tile_PE_tt.db'])
+  pt_signoff.extend_inputs(['Tile_MemCore_tt.db'])
+
   # Add cgra tile macro inputs to downstream nodes
   synth.extend_inputs ( ['Tile_PE_tt.lib']      )
   synth.extend_inputs ( ['Tile_MemCore_tt.lib'] )
@@ -304,6 +308,8 @@ def construct():
   ## PrimeTime Signoff ##
   ## ================= ##
   g.connect_by_name( adk,          pt_signoff     )
+  g.connect_by_name( Tile_PE,      pt_signoff     )
+  g.connect_by_name( Tile_MemCore, pt_signoff     )
   g.connect_by_name( signoff,      pt_signoff     )
   
   #-----------------------------------------------------------------------

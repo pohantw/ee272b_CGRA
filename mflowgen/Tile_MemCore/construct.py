@@ -90,6 +90,8 @@ def construct():
   netgen_lvs           = Step( this_dir + '/open-netgen-lvs'                       )
   calibre_lvs          = Step( this_dir + '/mentor-calibre-comparison'             )
   signoff              = Step( this_dir + '/cadence-innovus-signoff'               )
+  lib2db               = Step( this_dir + '/convert-lib2db'                        )
+  
 
   # Default steps
   info           = Step( 'info',                           default=True )
@@ -104,8 +106,8 @@ def construct():
   postroute      = Step( 'cadence-innovus-postroute',      default=True )
   postroute_hold = Step( 'cadence-innovus-postroute_hold', default=True )
   gdsmerge       = Step( 'mentor-calibre-gdsmerge',        default=True ) # pohan add
-  
   pt_signoff     = Step( 'synopsys-pt-timing-signoff',     default=True )
+  
   genlibdb       = Step( 'cadence-genus-genlib',           default=True )
   #genlibdb       = Step( 'synopsys-ptpx-genlibdb',         default=True )
   if which("calibre") is not None:
@@ -150,10 +152,14 @@ def construct():
   g.add_step( magic_drc            )
   g.add_step( netgen_lvs           )
   g.add_step( gdsmerge             )
+  g.add_step( lib2db               )
 
   #-----------------------------------------------------------------------
   # Graph -- Add edges
   #-----------------------------------------------------------------------
+
+  # additional inputs for the signoff step
+  pt_signoff.extend_inputs(["sram_tt.db"])
   
   # Dynamically add edges
   # Extra DC input
@@ -280,8 +286,10 @@ def construct():
   g.connect_by_name( signoff,              genlibdb )
   g.connect_by_name( adk,                  genlibdb )
   g.connect_by_name( genlibdb_constraints, genlibdb )
+  g.connect_by_name( genlibdb,             lib2db   )
 
   g.connect_by_name( adk,          pt_signoff   )
+  g.connect_by_name( gen_sram,     pt_signoff   )
   g.connect_by_name( signoff,      pt_signoff   )
 
   #-----------------------------------------------------------------------

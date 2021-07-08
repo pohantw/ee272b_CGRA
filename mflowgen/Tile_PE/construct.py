@@ -107,6 +107,9 @@ def construct():
   innovus_eco          = Step( this_dir + '/cadence-innovus-eco'             )
   signoff_post_eco     = Step( this_dir + '/cadence-innovus-signoff-post-eco')
 
+  # convert lib to db
+  lib2db               = Step( this_dir + '/convert-lib2db'                  )
+
   # Default steps
   info           = Step( 'info',                           default=True )
   synth          = Step( 'cadence-genus-synthesis',        default=True )
@@ -182,6 +185,7 @@ def construct():
   g.add_step( magic_drc                ) # pohan add
   g.add_step( netgen_lvs               ) # pohan add
   g.add_step( calibre_lvs              ) # pohan add
+  g.add_step( lib2db                   )
 
   if run_timing_eco:
     g.add_step( pt_eco                 )
@@ -301,6 +305,9 @@ def construct():
   g.connect_by_name( signoff,              genlibdb )
   g.connect_by_name( adk,                  genlibdb )
   g.connect_by_name( genlibdb_constraints, genlibdb )
+
+  # lib2db
+  g.connect_by_name( genlibdb,             lib2db   )
 
   #-----------------------------------------------------------------------
   # Parameterize
