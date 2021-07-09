@@ -1,6 +1,7 @@
 
 # design_merged.gds
-cp ../../../../caravel_user_project/openlane/user_project_wrapper/runs/user_project_wrapper/results/magic/user_project_wrapper.gds outputs/design_merged.gds
+#cp ../../../../caravel_user_project/openlane/user_project_wrapper/runs/user_project_wrapper/results/magic/user_project_wrapper.gds outputs/design_merged.gds
+cp ../../../../caravel_user_project/gds/user_project_wrapper.gds outputs/design_merged.gds
 
 # Tile_PE.lvs.v
 cp ../../../Tile_PE/build_w695/21-cadence-innovus-signoff/outputs/design.lvs.v outputs/Tile_PE.lvs.v
