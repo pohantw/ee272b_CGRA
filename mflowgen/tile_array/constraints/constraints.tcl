@@ -89,8 +89,8 @@ set_dont_touch $io_tile_nets false
 #            but we want hold time check remains at cycle-0, so adding another (N-1) cycle to pull it back
 set cfg_addr_regs [get_cells -hierarchical reg_cfg_addr*]
 set cfg_data_regs [get_cells -hierarchical reg_cfg_rdata*]
-set_multicycle_path 10 -from $cfg_addr_regs -to $cfg_data_regs -setup
-set_multicycle_path 9 -from $cfg_addr_regs -to $cfg_data_regs -hold
+set_multicycle_path 10 -to $cfg_data_regs -setup
+set_multicycle_path 9 -to $cfg_data_regs -hold
 
 # Don't ungroup references to *mantle_wire* because doing so 
 # causes hi,lo -> tile_id connections on cgra tiles to be
